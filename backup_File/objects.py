@@ -27,18 +27,6 @@ class backupDirectory():
             self.directorySyntax[paths[0].strip()] = paths[1].strip()
 
 
-    def copy2_verbose(self, src, dst):
-        self.filecount += 1
-        copy2(src, dst)
-
-    def countFiles(self):
-        count = 0 
-        directories = list(self.directorySyntax)
-        for d in directories: 
-            count += len(os.listdir(d))
-
-        return count 
-
     def copyDirectory(self): 
         self.splitDestination()
         for dirFolder in tqdm(list(self.directorySyntax), leave=True, desc=f"Backing Up: {self.directory_txt}"):
