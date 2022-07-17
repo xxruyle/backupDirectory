@@ -1,1 +1,2 @@
-C:\randomfolder 
+C:\examplePath\exampleFolder -> G:\destinationPath\destinationFolder
+C:\otherExamplePath\OtherExampleFolder -> G:\destinationPath\destinationFolder
